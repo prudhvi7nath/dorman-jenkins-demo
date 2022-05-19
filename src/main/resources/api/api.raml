@@ -1,0 +1,14 @@
+#%RAML 1.0
+title: jenkins-demo
+version: v1
+/health-check:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: | 
+              {
+                "status": "success",
+                "timestamp": "2022-05-11T01:01:01"
+              }
